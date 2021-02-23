@@ -19,7 +19,6 @@ class main extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
-
     // Registration
     public function register()
     {

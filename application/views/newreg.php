@@ -19,6 +19,7 @@
         <input type="text" name="mobile" placeholder="Mobile number">
         <input type="email" name="email" placeholder="Email">
         <input type="submit" name="submit">
+		
     </fieldset>
 </body>
 </html>

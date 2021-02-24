@@ -19,12 +19,13 @@ class main extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
-    // Registration
+    //User Registration
     public function register()
     {
         $this->load->view('newreg');
     }
 
+   //Insert User Details
 	public function reg()
     {
         $this->load->library('form_validation');
@@ -51,11 +52,13 @@ class main extends CI_Controller {
         }
     }    
 
-     // Login 
+     //User Login 
    public function loginform()
     {
         $this->load->view('logform');
     }
+	
+    //User Login 
      public function login()
     {
         $this->load->library('form_validation');
@@ -104,7 +107,7 @@ else{
         $this->load->view('view',$data);
     }   
 
-     // Approve /Reject
+     // Approve User 
     public function approve()
     {
         $this->load->model('mainmodel');
@@ -113,6 +116,8 @@ else{
         $this->mainmodel->approve($id);
         redirect('main/view','refresh');
     }   
+	
+   //Reject User
     public function reject()
     {
         $this->load->model('mainmodel');
